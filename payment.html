@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Portal - Skyline The Study Hub</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="index.html" class="logo">Skyline The Study Hub</a>
+      </h1>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="index.html#about" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="index.html#benefits" class="navbar-link">Benefits</a></li>
+          <li class="navbar-item"><a href="admission.html" class="navbar-link">Admission Portal</a></li>
+          <li class="navbar-item"><a href="payment.html" class="navbar-link">Payment Portal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section payment-form-section">
+      <div class="container">
+        <h2 class="h2 section-title">Payment Form</h2>
+        <form id="paymentForm" class="payment-form">
+          <div class="input-wrapper">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" />
+          </div>
+          <div class="input-wrapper">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+          </div>
+          <div class="input-wrapper">
+            <label for="amount">Amount to be Paid (INR)</label>
+            <input type="number" id="amount" name="amount" required min="1" placeholder="Enter amount" />
+          </div>
+          <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+        </form>
+        <div id="paymentDetails" class="payment-details" style="display:none; margin-top: 20px;">
+          <p>Please pay the amount to the following UPI ID:</p>
+          <h3>tahleelnisar@okhhdfcbank</h3>
+          <button id="printReceiptBtn" class="btn btn-secondary" style="margin-top: 20px;">Print Receipt</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/payment.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission Portal - Skyline The Study Hub</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="index.html" class="logo">Skyline The Study Hub</a>
+      </h1>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="index.html#about" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="index.html#benefits" class="navbar-link">Benefits</a></li>
+          <li class="navbar-item"><a href="admission.html" class="navbar-link">Admission Portal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section admission-form-section">
+      <div class="container">
+        <h2 class="h2 section-title">Admission Form</h2>
+        <form id="admissionForm" class="admission-form">
+          <div class="input-wrapper">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name" />
+          </div>
+          <div class="input-wrapper">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address" />
+          </div>
+          <div class="input-wrapper">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+          </div>
+          <div class="input-wrapper">
+            <label for="course">Enter Course</label>
+            <input type="text" id="course" name="course" required placeholder="Enter your course" />
+          </div>
+          <div class="input-wrapper">
+            <label for="aadhar">Aadhar Number</label>
+            <input type="text" id="aadhar" name="aadhar" required placeholder="Enter your Aadhar Number" />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Submit Admission
+          </button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/admission.js" defer></script>
+</body>

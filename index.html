@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyline The study Hub </title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/hero-abs-1.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/hero-abs-2.png"
+      media="min-width(768px)"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">Skyline The Study Hub </a>
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">Skyline The Study Hub </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="Close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-toggler>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#benefits" class="navbar-link" data-nav-toggler
+                >Benefits</a
+              >
+            </li>
+
+           
+
+           
+            <li class="navbar-item">
+              <a
+                href="admission.html"
+                class="navbar-link"
+                data-nav-toggler
+                >Admission Portal</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="payment.html"
+                class="navbar-link"
+                data-nav-toggler
+                >Payment Portal</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            aria-label="Open search"
+            data-search-toggler
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a
+            href="tel:+919622656200"
+            class="header-action-btn login-btn"
+            target="_blank"
+          >
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">CONTACT US</span>
+          </a>
+
+          <button
+            class="header-action-btn nav-open-btn"
+            aria-label="Open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- 
+    - #SEARCH BOX
+  -->
+
+    <div class="search-container" data-search-box>
+      <div class="container">
+        <button
+          class="search-close-btn"
+          aria-label="Close search"
+          data-search-toggler
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="search-wrapper">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Here..."
+            aria-label="Search"
+            class="search-field"
+          />
+
+          <button class="search-submit" aria-label="Submit" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="hero"
+          id="home"
+          aria-label="hero"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <p class="section-subtitle">Better Learning Future With Us</p>
+
+              <h2 class="h1 hero-title">Unlocking Edu, Shaping Futures.</h2>
+
+              <p class="hero-text">
+                Skyline library is a peaceful, student-friendly workspace designed to help learners stay focused and productive around the clock. Open 24/7 with uninterrupted power and lighting, we provide a quiet, well-lit environment perfect for late-night studies, exam preparations, or regular learning sessions. Our facility is equipped with high-speed Wi-Fi, comfortable seating, CCTV surveillance, clean washrooms, and drinking water to ensure a safe and convenient experience for all users. Whether you're a student, a working professional, or a competitive exam aspirant, Skyline Studyroom is your go-to destination for distraction-free learning anytime you need it.
+              </p>
+
+              <a
+                href="https://www.instagram.com/skylinethestudyhub?utm_source=qr&igsh=dHp3OHI4dzh1OHoz"
+                class="btn btn-primary"
+                target="_blank"
+              >
+                <span class="span">Look Library Activities</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="500"
+                height="500"
+                loading="lazy"
+                alt="hero image"
+                class="w-100"
+              />
+
+              <img
+                src="./assets/images/hero-abs-1.png"
+                width="318"
+                height="352"
+                loading="lazy"
+                aria-hidden="true"
+                class="abs-img abs-img-1"
+              />
+
+              <img
+                src="./assets/images/hero-abs-2.png"
+                width="160"
+                height="160"
+                loading="lazy"
+                aria-hidden="true"
+                class="abs-img abs-img-2"
+              />
+            </figure>
+          </div>
+        </section>
+
+           <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <figure class="about-banner">
+            <img
+              src="./assets/images/illustration.webp"
+              width="450"
+              height="590"
+              loading="lazy"
+              alt="about banner"
+              class="w-100 about-img"
+            />
+
+            <img
+              src="./assets/images/illustration-2.avif"
+              width="188"
+              height="242"
+              loading="lazy"
+              aria-hidden="true"
+              class="abs-img abs-img-1"
+            />
+
+            <img
+              src="./assets/images/illus.avif"
+              width="150"
+              height="200"
+              loading="lazy"
+              aria-hidden="true"
+              class="abs-img abs-img-2"
+            />
+          </figure>
+
+          <div class="about-content">
+            <p class="section-subtitle">Who We Are</p>
+          
+            <h2 class="h2 section-title">We Offer The Best Facilities</h2>
+          
+            <ul class="about-list">
+              <li class="about-item">
+                <div class="item-icon item-icon-1">
+                  <img
+                    src="./assets/images/about-icon-1.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">24×7 Access</h3>
+                  <p class="item-text">
+                    Study any time with uninterrupted lighting and power supply.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-2">
+                  <img
+                    src="./assets/images/about-icon-2.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">High-Speed Wi-Fi</h3>
+                  <p class="item-text">
+                    Seamless internet access for research and online classes.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-3">
+                  <img
+                    src="./assets/images/about-icon-3.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">Comfortable Seating</h3>
+                  <p class="item-text">
+                    Ergonomic chairs and spacious desks for long study hours.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-1">
+                  <img
+                    src="./assets/images/about-icon-1.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">Peaceful Environment</h3>
+                  <p class="item-text">
+                    A quiet, distraction-free atmosphere for maximum focus.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-2">
+                  <img
+                    src="./assets/images/about-icon-2.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">CCTV Surveillance</h3>
+                  <p class="item-text">
+                    24/7 monitored facility for your safety and peace of mind.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-3">
+                  <img
+                    src="./assets/images/about-icon-3.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">Clean Washrooms</h3>
+                  <p class="item-text">
+                    Maintained regularly to ensure hygiene and comfort.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-1">
+                  <img
+                    src="./assets/images/about-icon-1.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">Drinking Water</h3>
+                  <p class="item-text">
+                    Easily accessible purified water to keep you refreshed.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-2">
+                  <img
+                    src="./assets/images/about-icon-2.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">Locker Facility</h3>
+                  <p class="item-text">
+                    Secure storage for your books and personal belongings.
+                  </p>
+                </div>
+              </li>
+          
+              <li class="about-item">
+                <div class="item-icon item-icon-3">
+                  <img
+                    src="./assets/images/about-icon-3.png"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 class="h3 item-title">AC/Heated Rooms</h3>
+                  <p class="item-text">
+                    Stay comfortable during all seasons with climate-controlled rooms.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+            <a
+              href="https://www.facebook.com/share/1Epx8mAKVv/"
+              class="btn btn-primary"
+              target="_blank"
+            >
+              <span class="span">Know About Us</span>
+
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+        <!-- 
+        - #CATEGORY
+      -->
+      <section class="section category" id="benefits" aria-label="category">
+        <div class="container">
+          <p class="section-subtitle">
+            Benefits of joining  Skyline libray 
+          </p>
+
+          <h2 class="h2 section-title">
+            Popular Topics and Courses To Learn
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+<a href="https://www.scribd.com/document/459293412/MODULE-1-6-Personal-Development" target="_blank" rel="noopener noreferrer">Personal Development</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+<a href="https://jeemain.guru/download-bansal-physics-module/" target="_blank" rel="noopener noreferrer">Physics Study</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+<a href="https://ncdc.go.ug/wp-content/uploads/2024/02/Art_and_Design_prototype.pdf" target="_blank" rel="noopener noreferrer">Art &amp; Design</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+<a href="https://duz92c7qaoni3.cloudfront.net/documents/Resources_management_skills_FINAL.pdf" target="_blank" rel="noopener noreferrer">Management Skills</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="https://www.selfstudys.com/show-pdf/P1X3Q3BiIj8CQEdANaDi.pdf" target="_blank" rel="noopener noreferrer">Chemistry Study</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="thumbs-up-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="https://www.selfstudys.com/books/neet-biology" target="_blank" rel="noopener noreferrer">Biology Study</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="arrow-up"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Newspaper</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="https://www.allahsword.com/free_islamic_books.html" target="_blank" rel="noopener noreferrer">Islamic Study</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <div class="card-icon">
+                  <ion-icon name="medkit-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="https://fairbanks.indianapolis.iu.edu/doc/10-Tips-Healthy-Lifestyle.pdf" target="_blank" rel="noopener noreferrer">Health & Lifestyle</a>
+                  </h3>
+
+                  <span class="card-meta">Best in-class course</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+        <!--
+        - #NEWSLETTER
+      -->
+
+        <section
+          class="section newsletter"
+          id="admission"
+          aria-label="newsletter"
+          style="background-image: url('./assets/images/newsletter-bg.jpg')"
+        >
+          <div class="container">
+            <p class="section-subtitle">
+              Get admission in Skyline The study Hub 
+            </p>
+
+            <h2 class="h2 section-title">
+              We will contact you via your mobile number with more details
+            </h2>
+
+            <form
+              action="https://formspree.io/f/xjvqrygn"
+              method="POST"
+              class="newsletter-form"
+            >
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="phone_number"
+                  aria-label="tel"
+                  placeholder="Enter your mobile number"
+                  required
+                  class="email-field"
+                />
+
+                <ion-icon
+                  name="mail-open-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <span class="span">Contact Admission</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">Skyline The study Hub </a>
+
+            <p class="section-text">
+              The best library to support students in their academic journey, empowering their focus, vision, and productivity with a peaceful space and excellent facilities.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/share/1Epx8mAKVv/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/skylinethestudyhub?utm_source=qr&igsh=dHp3OHI4dzh1OHoz"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Upcoming Events</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Blog & News</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">FAQ Question</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Testimonials</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Useful Links</p>
+            </li>
+
+            
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Popular Courses</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Terms & Conditions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Privacy Policy</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="footer-link">
+                Frisal Kulgam Kashmir .
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+919622656200" class="footer-link"
+                >+919622656200</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="skyline7346@gmail.com" class="footer-link"
+                >skyline7346@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright 2025 tahleelcodes. All Rights Reserved by
+            <a
+              href=https://tahleelnisar.onrender.com/
+              target="_blank"
+              class="copyright-link"
+              >Tahleel nisar </a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
