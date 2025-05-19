@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('paymentForm');
   const paymentDetails = document.getElementById('paymentDetails');
   const printReceiptBtn = document.getElementById('printReceiptBtn');
+  const confirmPaymentBtn = document.getElementById('confirmPaymentBtn');
+  const upiLink = document.getElementById('upiLink');
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -23,6 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
     paymentDetails.dataset.name = name;
     paymentDetails.dataset.phone = phone;
     paymentDetails.dataset.amount = amount;
+
+    // Update the UPI link href to open Google Pay app with UPI ID and amount
+    const upiId = 'tahleelnisar@okhhdfcbank';
+    const upiUrl = `upi://pay?pa=${encodeURIComponent(upiId)}&pn=${encodeURIComponent(name)}&am=${encodeURIComponent(amount)}&cu=INR`;
+    upiLink.href = upiUrl;
+
+    // Show confirm payment button and disable print receipt button
+    confirmPaymentBtn.style.display = 'inline-block';
+    printReceiptBtn.disabled = true;
+  });
+
+  confirmPaymentBtn.addEventListener('click', () => {
+    // Enable print receipt button after payment confirmation
+    printReceiptBtn.disabled = false;
+    // Hide confirm payment button
+    confirmPaymentBtn.style.display = 'none';
   });
 
   printReceiptBtn.addEventListener('click', () => {
@@ -70,3 +88,4 @@ document.addEventListener('DOMContentLoaded', () => {
     printWindow.close();
   });
 });
+
