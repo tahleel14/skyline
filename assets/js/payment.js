@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     paymentDetails.dataset.amount = amount;
 
     // Update the UPI link href to open Google Pay app with UPI ID and amount
-    const upiId = 'tahleelnisar@okhhdfcbank';
+    const upiId = '6006562997@ibl';
     const upiUrl = `upi://pay?pa=${encodeURIComponent(upiId)}&pn=${encodeURIComponent(name)}&am=${encodeURIComponent(amount)}&cu=INR`;
     upiLink.href = upiUrl;
 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const name = paymentDetails.dataset.name;
     const phone = paymentDetails.dataset.phone;
     const amount = paymentDetails.dataset.amount;
-    const upiId = 'tahleelnisar@okhhdfcbank';
+    const upiId = '6006562997@ibl';
 
     const receiptContent = `
       <html>
@@ -88,4 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
     printWindow.close();
   });
 });
+
+
+
+
 
